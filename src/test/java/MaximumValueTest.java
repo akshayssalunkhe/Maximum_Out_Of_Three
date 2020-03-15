@@ -58,4 +58,10 @@ public class MaximumValueTest {
         String resultMaximumString = maximumValue.getMaximumString("Amey", "Amar", "Aman");
         Assert.assertEquals("Amey", resultMaximumString);
     }
+
+    @Test
+    public void givenThreeStrings_WhenSecondIsMaximum_ShouldReturnMaximumString() {
+        String resultMaximumString = maximumValue.getMaximumString("Amar", "Amey", "Aman");
+        Assert.assertEquals("Amey", resultMaximumString);
+    }
 }
