@@ -52,4 +52,10 @@ public class MaximumValueTest {
         float resultMaximumNumber = maximumValue.getMaximumFloatNumber(10.5f, 16.5f, 10.5f);
         Assert.assertEquals(16.5, resultMaximumNumber, 0.0);
     }
+
+    @Test
+    public void givenThreeStrings_WhenFirstIsMaximum_ShouldReturnMaximumString() {
+        String resultMaximumString = maximumValue.getMaximumString("Amey", "Amar", "Aman");
+        Assert.assertEquals("Amey", resultMaximumString);
+    }
 }
