@@ -22,4 +22,10 @@ public class MaximumValueTest {
         int resultMaximumNumber = maximumValue.getMaximumNumber( 5, 10, 16);
         Assert.assertEquals(16,resultMaximumNumber);
     }
+
+    @Test
+    public void givenThreeInteger_WhenTwoNumbersAreEqual_ShouldReturnMaximumNumber_() {
+        int resultMaximumNumber = maximumValue.getMaximumNumber(16, 10 ,16);
+        Assert.assertEquals(16,resultMaximumNumber);
+    }
 }
