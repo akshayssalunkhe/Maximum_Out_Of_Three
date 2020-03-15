@@ -16,4 +16,16 @@ public class MaximumValue {
         float maximumResultFloat = Math.max(thirdNumber, maximumResultOne);
         return maximumResultFloat;
     }
+
+    //METHOD TO FIND MAXIMUM STRING VALUE
+    public String getMaximumString(String firstString, String secondString, String thirdString) {
+        String maximumString = firstString;
+        if (secondString.compareTo(maximumString) > 0) {
+            maximumString = secondString;
+        }
+        if (thirdString.compareTo(maximumString) > 0) {
+            maximumString = thirdString;
+        }
+        return maximumString;
+    }
 }
