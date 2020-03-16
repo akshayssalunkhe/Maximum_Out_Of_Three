@@ -1,4 +1,23 @@
-public class MaximumValue {
+public class MaximumValue<E extends Comparable> {
+    E firstValue;
+    E secondValue;
+    E thirdValue;
+
+    //DEFAULT CONSTRUCTOR
+    public MaximumValue() {
+    }
+
+    //PARAMETRISED CONSTRUCTOR
+    public MaximumValue(E firstValue, E secondValue, E thirdValue) {
+        this.firstValue = firstValue;
+        this.secondValue = secondValue;
+        this.thirdValue = thirdValue;
+    }
+
+    public E getMaximumValue() {
+        return getMaximumValue(firstValue, secondValue, thirdValue);
+    }
+
     public static void main(String[] args) {
         System.out.println("Welcome To Find Maximum Value Problem");
     }
