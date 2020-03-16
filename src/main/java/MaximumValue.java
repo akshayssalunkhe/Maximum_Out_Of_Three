@@ -15,7 +15,13 @@ public class MaximumValue<E extends Comparable> {
     }
 
     public E getMaximumValue() {
-        return getMaximumValue(firstValue, secondValue, thirdValue);
+        E maximumValue = getMaximumValue(firstValue, secondValue, thirdValue);
+        printMaximumValue(maximumValue);
+        return maximumValue;
+    }
+
+    public void printMaximumValue(E maximumValue) {
+        System.out.println("Maximum Value Is: " + maximumValue);
     }
 
     public static void main(String[] args) {
