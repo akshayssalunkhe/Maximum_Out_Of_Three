@@ -1,4 +1,5 @@
 public class MaximumValue<E extends Comparable> {
+    //FIELDS
     E firstValue;
     E secondValue;
     E thirdValue;
@@ -14,18 +15,21 @@ public class MaximumValue<E extends Comparable> {
         this.thirdValue = thirdValue;
     }
 
+    //MAIN METHOD
+    public static void main(String[] args) {
+        System.out.println("Welcome To Find Maximum Value Problem");
+    }
+
+    //METHOD CALLING GET MAXIMUM VALUE METHOD
     public E getMaximumValue() {
         E maximumValue = getMaximumValue(firstValue, secondValue, thirdValue);
         printMaximumValue(maximumValue);
         return maximumValue;
     }
 
+    // METHOD TO PRINT MAXIMUM VALUE
     public void printMaximumValue(E maximumValue) {
         System.out.println("Maximum Value Is: " + maximumValue);
-    }
-
-    public static void main(String[] args) {
-        System.out.println("Welcome To Find Maximum Value Problem");
     }
 
     //GENERIC METHOD TO FIND MAXIMUM VALUE
